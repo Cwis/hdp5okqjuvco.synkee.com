@@ -1,0 +1,372 @@
+
+/* FONT */
+@font-face {
+    font-family: 'QuicksandBook';
+    src: url('fonts/Quicksand_Book-webfont.eot');
+    src: url('fonts/Quicksand_Book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Quicksand_Book-webfont.woff') format('woff'),
+         url('fonts/Quicksand_Book-webfont.ttf') format('truetype'),
+         url('fonts/Quicksand_Book-webfont.svg#QuicksandBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'QuicksandBold';
+    src: url('fonts/Quicksand_Bold-webfont.eot');
+    src: url('fonts/Quicksand_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Quicksand_Bold-webfont.woff') format('woff'),
+         url('fonts/Quicksand_Bold-webfont.ttf') format('truetype'),
+         url('fonts/Quicksand_Bold-webfont.svg#QuicksandBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+/* ---- */
+
+
+/* MAIN ELEMENTS */
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	height: 100%;
+	background-color: white;
+	font-family: 'QuicksandBook';
+	font-size: 10pt;
+	line-height: 16px;
+	-webkit-font-smoothing: antialiased;
+	background-color: #4c4c4c;
+	color: #333333;
+}
+
+body {
+	margin: auto;
+	margin-top: 2%;
+	width: 90%;
+	height: 90%; 
+}
+
+#title {
+	width: 100%;
+	height: 70px;
+	border-radius: 10px;
+	background-color: white;
+}
+
+#title_text {
+	margin-left: 5%;
+	width: 75%;
+	height: 16px;
+	padding-top: 27px;
+	vertical-align: bottom;
+}
+
+#title_logo {
+	margin-right: 5%;
+	width: 15%;
+	height: 44px;
+	margin-top: 16px;
+	background-image: url('img/logo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	float: right;
+}
+
+.content_box {
+	min-height: 100px;
+	margin-top: 2%;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.content {
+	margin-left: 5%;
+	width: 90%;
+	padding-top: 27px;
+	padding-bottom: 27px;
+	overflow-x: auto;	
+}
+
+#footer {
+	margin-top: 2%;
+	width: 100%;
+	height: 70px;
+	border-radius: 10px;
+	background-color: white;
+}
+
+#footer_text {
+	margin-left: 5%;
+	width: 75%;
+	height: 16px;
+	padding-top: 27px;
+	vertical-align: bottom;
+}
+
+#footer_logo {
+	margin-right: 5%;
+	width: 15%;
+	height: 44px;
+	margin-top: 16px;
+	background-image: url('img/picto.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	float: right;
+}
+
+/*
+#footer_text {
+	margin-left: 5%;
+	width: 75%;
+	height: 30px;
+	padding-top: 10px;
+	vertical-align: bottom;
+}
+
+#footer_logo {
+	margin-right: 5%;
+	width: 15%;
+	height: 30px;
+	margin-top: 5px;
+	background-image: url('img/picto.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	float: right;
+}
+*/
+
+/* ------------- */
+
+
+/* Research area */
+
+#short-menu {
+	padding: 0; margin: 0;
+	text-align: center; 
+}
+#short-menu li {
+	display: inline;
+	list-style: none;
+	background: #d3e4a1;
+	border-radius: 3px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+#short-menu a {
+	display:inline-block;
+	margin: 0 30px;
+	text-decoration: none;
+	color: black;
+}
+#short-menu li:hover {
+	background: #A7C942;
+}
+#research-box {
+	display: none;
+}
+/* ------------- */
+
+
+/* Result table */
+#result-table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#result-table td, #result-table th {
+    font-size: 1em;
+    border: 1px solid #98bf21;
+    padding: 3px 7px 2px 7px;
+	vertical-align: top;
+}
+
+#result-table th {
+    font-size: 1.1em;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: #A7C942;
+    color: white;
+}
+
+#result-table tr.alt td {
+    color: #000000;
+    background-color: #EAF2D3;
+}
+
+li {
+	margin-left: 20px;
+}
+
+#result-table a {
+    text-decoration: none;
+	color: white;
+}
+
+#result-table a:hover {
+	text-shadow: #CCCCCC 0.2em 0.2em 0.3em;
+}
+/* ------ */
+
+
+/* Add */
+#add-box {
+	min-height: 100px;
+	margin-top: 2%;
+	border-radius: 10px;
+	background-color: white;
+}
+
+#add-fields {
+	margin-left: 5%;
+	width: 90%;
+	padding-top: 27px;
+}
+
+.add-button {
+	color: white;
+	border-radius: 4px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	background: #A7C942;
+    text-align: center;
+	cursor: pointer;
+}
+.add-button:hover {
+    background: #bdd671;
+    background: -webkit-linear-gradient(top, #bdd671, #A7C942); 
+    background: -moz-linear-gradient(top, #bdd671, #A7C942);
+    background: -o-linear-gradient(top, #bdd671, #A7C942);
+    background: -ms-linear-gradient(top, #bdd671, #A7C942);
+    background: linear-gradient(top, #bdd671, #A7C942);
+}
+
+.modify-button {
+	color: white;
+	border-radius: 4px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	background: #f1c430;
+    text-align: center;
+	cursor: pointer;
+}
+.modify-button:hover {
+    background: #f5d46a;
+    background: -webkit-linear-gradient(top, #f5d46a, #f1c430); 
+    background: -moz-linear-gradient(top, #f5d46a, #f1c430);
+    background: -o-linear-gradient(top, #f5d46a, #f1c430);
+    background: -ms-linear-gradient(top, #f5d46a, #f1c430);
+    background: linear-gradient(top, #f5d46a, #f1c430);
+}
+
+.clear-button {
+	color: white;
+	border-radius: 4px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	background: #b0190f;
+    text-align: center;
+	cursor: pointer;
+}
+.clear-button:hover {
+    background: #eb2314;
+    background: -webkit-linear-gradient(top, #eb2314, #b0190f); 
+    background: -moz-linear-gradient(top, #eb2314, #b0190f);
+    background: -o-linear-gradient(top, #eb2314, #b0190f);
+    background: -ms-linear-gradient(top, #eb2314, #b0190f);
+    background: linear-gradient(top, #eb2314, #b0190f);
+}
+
+.big-button {
+	font-size: 1.5em;
+}
+
+fieldset {
+	margin-top: 10px;
+	padding: 5px;
+	border: 1px dotted #A7C942;
+}
+
+label {
+    font-family: 'QuicksandBold';
+}
+
+label, input{
+	font-size: 1.5em;
+}
+
+.margint5 {
+	margin-top: 10px;
+}
+/* --- */
+
+
+/* Button Styles */
+.button {    
+    /*Step 2: Basic Button Styles*/
+    display: block;
+	margin: auto;
+	margin-top: 1%;
+    height: 50px;
+    width: 300px;
+    background: #d3e4a1;
+    border: 2px solid rgba(33, 68, 72, 0.59);
+    
+    /*Step 3: Text Styles*/
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    /*font: bold 1.5em/50px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;*/
+	font: bold 1.8em/50px 'QuicksandBook';
+    
+    /*Step 4: Fancy CSS3 Styles*/
+    background: -webkit-linear-gradient(top, #d3e4a1, #A7C942); /* #ee4135 / #b0190f */ 
+    background: -moz-linear-gradient(top, #d3e4a1, #A7C942);
+    background: -o-linear-gradient(top, #d3e4a1, #A7C942);
+    background: -ms-linear-gradient(top, #d3e4a1, #A7C942);
+    background: linear-gradient(top, #d3e4a1, #A7C942);
+    
+    -webkit-border-radius: 25px;
+    -khtml-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    
+    -webkit-box-shadow: 0 8px 0 #27300d; /* 330704 */
+    -moz-box-shadow: 0 8px 0 #27300d;
+    box-shadow: 0 8px 0 #27300d;
+    
+    text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);    
+}
+
+/*Step 3: Link Styles*/
+a.button {
+    text-decoration: none;
+}
+
+/*Step 5: Hover Styles*/
+a.button:hover {
+    background: #ecf3d6;
+    background: -webkit-linear-gradient(top, #ecf3d6, #A7C942); /* f16d64 */
+    background: -moz-linear-gradient(top, #ecf3d6, #A7C942);
+    background: -o-linear-gradient(top, #ecf3d6, #A7C942);
+    background: -ms-linear-gradient(top, #ecf3d6, #A7C942);
+    background: linear-gradient(top, #ecf3d6, #A7C942);
+}
+
+.weasis-button {	
+	width: 27px;
+	height: 29px;
+	background: url("img/weasis.png") no-repeat;
+	cursor: pointer;
+	border: none;
+}
+.weasis-button:hover {
+	background: url("img/weasis2.png") no-repeat;
+}
+/* ------------- */
+
+
+.debug {
+	color: red;
+}
